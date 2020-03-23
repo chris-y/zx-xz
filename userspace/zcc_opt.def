@@ -1,0 +1,24 @@
+
+IF !DEFINED_CLIB_MALLOC_HEAP_SIZE
+	defc	DEFINED_CLIB_MALLOC_HEAP_SIZE = 1
+	defc CLIB_MALLOC_HEAP_SIZE = -1
+	IFNDEF CLIB_MALLOC_HEAP_SIZE
+	ENDIF
+ENDIF
+
+
+IF !DEFINED_startup
+	defc	DEFINED_startup = 1
+	defc startup = 30
+	IFNDEF startup
+	ENDIF
+ENDIF
+
+
+IF !DEFINED_startupoffset
+	defc	DEFINED_startupoffset = 1
+	defc startupoffset = 768
+	IFNDEF startupoffset
+	ENDIF
+ENDIF
+
