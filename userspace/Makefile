@@ -13,7 +13,7 @@ BCJ_CPPFLAGS =
 #		-DXZ_DEC_ARM -DXZ_DEC_ARMTHUMB -DXZ_DEC_SPARC
 CPPFLAGS =
 # -DXZ_USE_CRC32 -DXZ_DEC_ANY_CHECK
-CFLAGS = -v -startup=0 -subtype=dotn -clib=sdcc_iy -SO3 --opt-code-size -pragma-define=CLIB_MALLOC_HEAP_SIZE=-1 $(CPPFLAGS)
+CFLAGS = -v -startup=0 -subtype=dotn -clib=sdcc_iy -O3 -SO3 --opt-code-size --max-allocs-per-node200000 -pragma-define=CLIB_MALLOC_HEAP_SIZE=-1 $(CPPFLAGS)
 RM = rm -f
 VPATH = ../linux/include/linux ../linux/lib/xz
 COMMON_SRCS = xz_crc32.c xz_crc64.c xz_dec_stream.c xz_dec_lzma2.c xz_dec_bcj.c
