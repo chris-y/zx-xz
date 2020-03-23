@@ -10,6 +10,8 @@
 #ifndef XZ_CONFIG_H
 #define XZ_CONFIG_H
 
+#define XZ_EXTERN
+
 /* Uncomment to enable CRC64 support. */
 /* #define XZ_USE_CRC64 */
 

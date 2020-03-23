@@ -9,7 +9,7 @@ ENDIF
 
 IF !DEFINED_startup
 	defc	DEFINED_startup = 1
-	defc startup = 30
+	defc startup = 0
 	IFNDEF startup
 	ENDIF
 ENDIF
